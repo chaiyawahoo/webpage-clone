@@ -7,7 +7,7 @@ html, body {
 }
 
 #teltype-img {
-    background: url("atom-teltype.png");
+    background: url("../images/atom-teltype.png");
     background-size: cover;
     width: 100%;
     height: 100%;
@@ -27,7 +27,7 @@ html, body {
 }
 
 #github-img {
-    background: url("atom-github.png");
+    background: url("../images/atom-github.png");
     background-size: cover;
     width: 100%;
     height: 100%;
