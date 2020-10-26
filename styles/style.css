@@ -7,41 +7,37 @@ html, body {
 }
 
 #teltype-img {
-    background: url("../images/atom-teltype.png");
-    background-size: cover;
     width: 100%;
     height: 100%;
-    margin-left: 5em;
+    opacity: 0.75;
+    transition: 2s ease;
 }
 
 #teltype-filter {
     height: 100%;
     width: 100%;
-    opacity: 0.5;
-    transition: 2s ease;
     background-color: #007BFF;
+    margin-left: 5em;
 }
 
-#teltype-img:hover #teltype-filter{
-    opacity: 0;
+#teltype-filter:hover #teltype-img{
+    opacity: 1;
 }
 
 #github-img {
-    background: url("../images/atom-github.png");
-    background-size: cover;
     width: 100%;
     height: 100%;
-    margin-left: -5em;
+    opacity: 0.75;
+    transition: 2s ease;
 }
 
 #github-filter {
     height: 100%;
     width: 100%;
-    opacity: 0.5;
-    transition: 2s ease;
     background-color: #6C757D;
+    margin-left: -5em;
 }
 
-#github-img:hover #github-filter{
-    opacity: 0;
+#github-filter:hover #github-img{
+    opacity: 1;
 }

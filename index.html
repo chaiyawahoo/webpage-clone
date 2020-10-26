@@ -47,7 +47,7 @@
     <div class="container-fluid text-center mt-5">
         <div class="row mb-5">
             <div class="col-md-7">
-                <img src="images/atom-splash.png">
+                <img src="images/atom-splash.png" class="img-fluid">
             </div>
             <div class="col-md-3">
                 <div class="card">
@@ -96,8 +96,13 @@
 
     <div class="container-fluid">
         <div class="row mt-5 mb-5">
-            <div class="offset-md-2 col-md-3 mt-5">
-                <h2>Teltype for Wahoo</h2>
+            <div class="col-md-7 order-md-2 mb-md-0 mb-5">
+                <div class="rounded" id="teltype-filter">
+                    <img src="images/atom-teltype.png" id="teltype-img">
+                </div>
+            </div>
+            <div class="offset-md-2 col-md-3 mb-md-5 mb-0 order-md-1 d-flex flex-column justify-content-center  align-items-start">
+                <h2 class="mb-md-5">Teltype for Wahoo</h2>
                 <p>
                     Great things happen when developers work
                     together—from teaching and sharing knowledge
@@ -111,23 +116,18 @@
                     <a href="#">open Teletype in Wahoo</a>
                     and install the package.
                 </p>
-                <div class="btn btn-primary mt-5">Learn More</div>
-            </div>
-            <div class="col-md-7">
-                <div class="rounded" id="teltype-img">
-                    <div class="rounded" id="teltype-filter"></div>
-                </div>
+                <div class="btn btn-primary mt-md-5">Learn More</div>
             </div>
         </div>
     </div>
     <div class="row mt-5 mb-5 ml-0">
         <div class="col-md-7">
-            <div class="rounded" id="github-img">
-                <div class="rounded" id="github-filter"></div>
+            <div class="rounded" id="github-filter">
+                <img src="images/atom-github.png" id="github-img">
             </div>
         </div>
-        <div class="col-md-3 mt-5">
-            <h2>GitHub for Wahoo</h2>
+        <div class="col-md-3 mt-5 d-flex flex-column justify-content-center align-items-start">
+            <h2 class="mb-md-5">GitHub for Wahoo</h2>
             <p>
                 A text editor is at the core of a developer’s
                 toolbox, but it doesn't usually work alone. Work
@@ -141,7 +141,7 @@
                 The GitHub package is already bundled with
                 Wahoo, so you're ready to go!
             </p>
-            <div class="btn btn-secondary mt-5">Learn More</div>
+            <div class="btn btn-secondary mt-md-5">Learn More</div>
         </div>
     </div>
     </div>
