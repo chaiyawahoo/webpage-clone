@@ -6,41 +6,62 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
     <link rel="stylesheet" href="styles/style.css">
     <title>Wahoo</title>
 </head>
 
 <body>
-    <nav class="navbar navbar-expand justify-content-around border-bottom">
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">Packages</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Themes</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Documentation</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Blog</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Discuss</a>
-            </li>
-        </ul>
-        <ul class="navbar-nav">
-            <li class="nav-item">
-                <a class="nav-link" href="#">
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-open" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M1 15.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM11.5 2H11V1h.5A1.5 1.5 0 0 1 13 2.5V15h-1V2.5a.5.5 0 0 0-.5-.5z"/>
-                        <path fill-rule="evenodd" d="M10.828.122A.5.5 0 0 1 11 .5V15h-1V1.077l-6 .857V15H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117z"/>
-                        <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z"/>
-                    </svg>
-                    Sign In
-                </a>
-            </li>
-        </ul>
+    <nav class="navbar navbar-expand-md justify-content-around-md border-bottom">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggler"
+            aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+            <h3>
+                <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-list" fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd"
+                        d="M2.5 11.5A.5.5 0 0 1 3 11h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 7h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4A.5.5 0 0 1 3 3h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" />
+                </svg>
+            </h3>
+        </button>
+        <a class="nav-link order-md-2" href="#">
+            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-door-open" fill="currentColor"
+                xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"
+                    d="M1 15.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM11.5 2H11V1h.5A1.5 1.5 0 0 1 13 2.5V15h-1V2.5a.5.5 0 0 0-.5-.5z" />
+                <path fill-rule="evenodd"
+                    d="M10.828.122A.5.5 0 0 1 11 .5V15h-1V1.077l-6 .857V15H3V1.5a.5.5 0 0 1 .43-.495l7-1a.5.5 0 0 1 .398.117z" />
+                <path d="M8 9c0 .552.224 1 .5 1s.5-.448.5-1-.224-1-.5-1-.5.448-.5 1z" />
+            </svg>
+            Sign In
+        </a>
+        <div class="collapse navbar-collapse order-md-1" id="navbarToggler">
+            <ul class="navbar-nav mr-auto mt-2 mt-md-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Packages</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Themes</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Documentation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Discuss</a>
+                </li>
+            </ul>
+        </div>
     </nav>
 
     <!-- HERO -->
@@ -63,13 +84,16 @@
                         <p>For macOS 10.10 or later</p>
                     </div>
                     <div class="card-footer">
-                        <div class="btn btn-primary btn-block">
-                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                                <path fill-rule="evenodd" d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z"/>
-                                <path fill-rule="evenodd" d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z"/>
+                        <a class="btn btn-primary btn-block" href="images/atom-splash.png" download="wahoo-splash">
+                            <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-download" fill="currentColor"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path fill-rule="evenodd"
+                                    d="M.5 9.9a.5.5 0 0 1 .5.5v2.5a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1v-2.5a.5.5 0 0 1 1 0v2.5a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2v-2.5a.5.5 0 0 1 .5-.5z" />
+                                <path fill-rule="evenodd"
+                                    d="M7.646 11.854a.5.5 0 0 0 .708 0l3-3a.5.5 0 0 0-.708-.708L8.5 10.293V1.5a.5.5 0 0 0-1 0v8.793L5.354 8.146a.5.5 0 1 0-.708.708l3 3z" />
                             </svg>
                             Download
-                        </div>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -95,11 +119,12 @@
     </div>
 
     <div class="container-fluid">
-        <div class="row mt-5 mb-5">
-            <div class="col-md-7 order-md-2 mb-md-0 mb-5">
-                <img class="rounded" src="images/atom-teltype.png" id="teltype-img">
+        <div class="row my-5 mx-0">
+            <div class="offset-lg-1 d-none d-lg-block col-lg-7 order-lg-2 mb-lg-0 mb-5">
+                <img class="rounded img-fluid" src="images/atom-teltype.png" id="teltype-img">
             </div>
-            <div class="offset-md-2 col-md-3 mb-md-5 mb-0 order-md-1 d-flex flex-column justify-content-center  align-items-start">
+            <div
+                class="offset-lg-1 col-lg-3 mb-lg-5 mb-0 order-lg-1 d-flex flex-column justify-content-center align-items-start">
                 <h2 class="mb-md-5">Teltype for Wahoo</h2>
                 <p>
                     Great things happen when developers work
@@ -108,28 +133,34 @@
                     makes collaborating on code just as easy as it is
                     to code alone, right from your editor.
                 </p>
+                <div class="offset-lg-1 d-block d-lg-none col-lg-7 order-lg-2 my-lg-0 my-5">
+                    <img class="rounded img-fluid" src="images/atom-teltype.png" id="teltype-img">
+                </div>
                 <p>
                     Share your workspace and edit code together in
                     real time. To start collaborating,
                     <a href="#">open Teletype in Wahoo</a>
                     and install the package.
                 </p>
-                <div class="btn btn-primary mt-md-5">Learn More</div>
+                <div class="btn btn-primary mt-lg-5">Learn More</div>
             </div>
         </div>
     </div>
-    <div class="row mt-5 mb-5 ml-0">
-        <div class="col-md-7">
-            <img class="rounded" src="images/atom-github.png" id="github-img">
+    <div class="row my-5 mx-0">
+        <div class="col-lg-7 d-none d-lg-block">
+            <img class="rounded img-fluid" src="images/atom-github.png" id="github-img">
         </div>
-        <div class="col-md-3 mt-5 d-flex flex-column justify-content-center align-items-start">
-            <h2 class="mb-md-5">GitHub for Wahoo</h2>
+        <div class="offset-lg-1 col-lg-3 mt-5 d-flex flex-column justify-content-center align-items-start ml-0">
+            <h2 class="mb-lg-5">GitHub for Wahoo</h2>
             <p>
                 A text editor is at the core of a developer’s
                 toolbox, but it doesn't usually work alone. Work
                 with Git and GitHub directly from Wahoo with the
                 GitHub package.
             </p>
+            <div class="col-lg-7 d-block d-lg-none my-lg-0 my-5">
+                <img class="rounded img-fluid" src="images/atom-github.png" id="github-img">
+            </div>
             <p>
                 Create new branches, stage and commit, push
                 and pull, resolve merge conflicts, view pull
@@ -137,10 +168,8 @@
                 The GitHub package is already bundled with
                 Wahoo, so you're ready to go!
             </p>
-            <div class="btn btn-secondary mt-md-5">Learn More</div>
+            <div class="btn btn-secondary mt-lg-5">Learn More</div>
         </div>
-    </div>
-    </div>
     </div>
 
     <div class="container-fluid mb-5">
@@ -263,8 +292,10 @@
             </div>
             <div class="col-1 text-right">
                 <h3>
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bucket" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5zm1.005 0h8.945a4.5 4.5 0 0 0-8.945 0zm9.892 1H2.581l1.286 8.574A.5.5 0 0 0 4.36 15h7.278a.5.5 0 0 0 .494-.426L13.42 6z"/>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-bucket" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M2.522 5H2a.5.5 0 0 0-.494.574l1.372 9.149A1.5 1.5 0 0 0 4.36 16h7.278a1.5 1.5 0 0 0 1.483-1.277l1.373-9.149A.5.5 0 0 0 14 5h-.522A5.5 5.5 0 0 0 2.522 5zm1.005 0h8.945a4.5 4.5 0 0 0-8.945 0zm9.892 1H2.581l1.286 8.574A.5.5 0 0 0 4.36 15h7.278a.5.5 0 0 0 .494-.426L13.42 6z" />
                     </svg>
                 </h3>
             </div>
@@ -282,9 +313,12 @@
         <div class="row">
             <div class="offset-md-2 col-1 text-right">
                 <h3>
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-tools" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z"/>
-                        <path fill-rule="evenodd" d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z"/>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-tools" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M0 1l1-1 3.081 2.2a1 1 0 0 1 .419.815v.07a1 1 0 0 0 .293.708L10.5 9.5l.914-.305a1 1 0 0 1 1.023.242l3.356 3.356a1 1 0 0 1 0 1.414l-1.586 1.586a1 1 0 0 1-1.414 0l-3.356-3.356a1 1 0 0 1-.242-1.023L9.5 10.5 3.793 4.793a1 1 0 0 0-.707-.293h-.071a1 1 0 0 1-.814-.419L0 1zm11.354 9.646a.5.5 0 0 0-.708.708l3 3a.5.5 0 0 0 .708-.708l-3-3z" />
+                        <path fill-rule="evenodd"
+                            d="M15.898 2.223a3.003 3.003 0 0 1-3.679 3.674L5.878 12.15a3 3 0 1 1-2.027-2.027l6.252-6.341A3 3 0 0 1 13.778.1l-2.142 2.142L12 4l1.757.364 2.141-2.141zm-13.37 9.019L3.001 11l.471.242.529.026.287.445.445.287.026.529L5 13l-.242.471-.026.529-.445.287-.287.445-.529.026L3 15l-.471-.242L2 14.732l-.287-.445L1.268 14l-.026-.529L1 13l.242-.471.026-.529.445-.287.287-.445.529-.026z" />
                     </svg>
                 </h3>
             </div>
@@ -299,8 +333,10 @@
             </div>
             <div class="col-1 text-right">
                 <h3>
-                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
                     </svg>
                 </h3>
             </div>
@@ -350,38 +386,42 @@
         </div>
     </div>
 
-    <nav class="navbar navbar-expand justify-content-around">
-        <ul class="navbar-nav">
-            <li class="nav-item">
+    <nav class="navbar navbar-expand-lg justify-content-around">
+        <ul class="navbar-nav d-flex flex-row flex-wrap justify-content-around">
+            <li class="nav-item px-1">
                 <a class="nav-link" href="#">Terms of Use</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
                 <a class="nav-link" href="#">Privacy</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
                 <a class="nav-link" href="#">Code of Conduct</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
                 <a class="nav-link" href="#">Releases</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
                 <a class="nav-link" href="#">FAQ</a>
             </li>
-            <li class="nav-item">
+            <li class="nav-item mx-1">
                 <a class="nav-link" href="#">Contact</a>
             </li>
         </ul>
         <ul class="navbar-nav">
             <li class="nav-item">
                 <a class="nav-link" href="#">
-                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-code" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z"/>
-                    </svg> 
-                     with 
-                     <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-                        <path fill-rule="evenodd" d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z"/>
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-code" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M5.854 4.146a.5.5 0 0 1 0 .708L2.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm4.292 0a.5.5 0 0 0 0 .708L13.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0z" />
                     </svg>
-                     by chaiyawahoo
+                    with
+                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-heart-fill" fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd"
+                            d="M8 1.314C12.438-3.248 23.534 4.735 8 15-7.534 4.736 3.562-3.248 8 1.314z" />
+                    </svg>
+                    by chaiyawahoo
                 </a>
             </li>
         </ul>
