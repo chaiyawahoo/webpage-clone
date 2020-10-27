@@ -16,7 +16,14 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles/style.css">
+    <style>
+        html, body { overflow-x: hidden; }
+        .text-pop { color: #008888; }
+        #teltype-img { filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(180deg) saturate(3.5); }
+        #github-img {filter: brightness(0.9) contrast(1) saturate(0); }
+        [data-type="info"] { transition: 2s ease; }
+        [data-type="info"]:hover { filter: none !important; }
+    </style>
     <title>Wahoo</title>
 </head>
 
@@ -122,7 +129,7 @@
     <div class="container-fluid">
         <div class="row my-5 mx-0 d-flex align-items-center">
             <div class="d-none d-lg-block col-lg-7 order-lg-2 mb-lg-0 mb-5">
-                <img class="rounded img-fluid" src="images/atom-teltype.png" id="teltype-img">
+                <img class="rounded img-fluid" src="images/atom-teltype.png" id="teltype-img" data-type="info">
             </div>
             <div
                 class="offset-lg-1 col-lg-4 mb-lg-5 mb-0 order-lg-1 d-flex flex-column justify-content-center align-items-start">
@@ -135,7 +142,7 @@
                     to code alone, right from your editor.
                 </p>
                 <div class="offset-lg-1 d-block d-lg-none col-lg-7 order-lg-2 my-lg-0 my-5">
-                    <img class="rounded img-fluid" src="images/atom-teltype.png" id="teltype-img">
+                    <img class="rounded img-fluid" src="images/atom-teltype.png" id="teltype-img" data-type="info">
                 </div>
                 <p>
                     Share your workspace and edit code together in
@@ -149,7 +156,7 @@
     </div>
     <div class="row my-5 mx-0 d-flex align-items-center">
         <div class="col-lg-7 d-none d-lg-block">
-            <img class="rounded img-fluid" src="images/atom-github.png" id="github-img">
+            <img class="rounded img-fluid" src="images/atom-github.png" id="github-img" data-type="info">
         </div>
         <div class="col-lg-4 mt-5 d-flex flex-column justify-content-center align-items-start ml-0">
             <h2 class="mb-lg-5">GitHub for Wahoo</h2>
@@ -160,7 +167,7 @@
                 GitHub package.
             </p>
             <div class="col-lg-7 d-block d-lg-none my-lg-0 my-5">
-                <img class="rounded img-fluid" src="images/atom-github.png" id="github-img">
+                <img class="rounded img-fluid" src="images/atom-github.png" id="github-img" data-type="transition">
             </div>
             <p>
                 Create new branches, stage and commit, push
