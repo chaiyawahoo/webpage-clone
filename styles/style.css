@@ -9,35 +9,21 @@ html, body {
 #teltype-img {
     width: 100%;
     height: 100%;
-    opacity: 0.75;
     transition: 2s ease;
+    filter: brightness(0.75) contrast(1) sepia(0.7) hue-rotate(180deg) saturate(3.5);
 }
 
-#teltype-filter {
-    height: 100%;
-    width: 100%;
-    background-color: #007BFF;
-    margin-left: 5em;
-}
-
-#teltype-filter:hover #teltype-img{
-    opacity: 1;
+#teltype-img:hover {
+    filter: none;
 }
 
 #github-img {
     width: 100%;
     height: 100%;
-    opacity: 0.75;
+    filter: brightness(0.9) contrast(1) saturate(0);
     transition: 2s ease;
 }
 
-#github-filter {
-    height: 100%;
-    width: 100%;
-    background-color: #6C757D;
-    margin-left: -5em;
-}
-
-#github-filter:hover #github-img{
-    opacity: 1;
+#github-img:hover {
+    filter: none;
 }
